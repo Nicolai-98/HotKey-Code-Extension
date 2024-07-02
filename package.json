@@ -1,0 +1,219 @@
+{
+  "name": "hotkey",
+  "displayName": "HotKey",
+  "description": "Assign hotkeys to currently open files for quick access.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "hotkey.assign0",
+        "title": "Assign Hotkey 0"
+      },
+      {
+        "command": "hotkey.assign1",
+        "title": "Assign Hotkey 1"
+      },
+      {
+        "command": "hotkey.assign2",
+        "title": "Assign Hotkey 2"
+      },
+      {
+        "command": "hotkey.assign3",
+        "title": "Assign Hotkey 3"
+      },
+      {
+        "command": "hotkey.assign4",
+        "title": "Assign Hotkey 4"
+      },
+      {
+        "command": "hotkey.assign5",
+        "title": "Assign Hotkey 5"
+      },
+      {
+        "command": "hotkey.assign6",
+        "title": "Assign Hotkey 6"
+      },
+      {
+        "command": "hotkey.assign7",
+        "title": "Assign Hotkey 7"
+      },
+      {
+        "command": "hotkey.assign8",
+        "title": "Assign Hotkey 8"
+      },
+      {
+        "command": "hotkey.assign9",
+        "title": "Assign Hotkey 9"
+      },
+      {
+        "command": "hotkey.jump0",
+        "title": "Jump to Hotkey 0"
+      },
+      {
+        "command": "hotkey.jump1",
+        "title": "Jump to Hotkey 1"
+      },
+      {
+        "command": "hotkey.jump2",
+        "title": "Jump to Hotkey 2"
+      },
+      {
+        "command": "hotkey.jump3",
+        "title": "Jump to Hotkey 3"
+      },
+      {
+        "command": "hotkey.jump4",
+        "title": "Jump to Hotkey 4"
+      },
+      {
+        "command": "hotkey.jump5",
+        "title": "Jump to Hotkey 5"
+      },
+      {
+        "command": "hotkey.jump6",
+        "title": "Jump to Hotkey 6"
+      },
+      {
+        "command": "hotkey.jump7",
+        "title": "Jump to Hotkey 7"
+      },
+      {
+        "command": "hotkey.jump8",
+        "title": "Jump to Hotkey 8"
+      },
+      {
+        "command": "hotkey.jump9",
+        "title": "Jump to Hotkey 9"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "hotkey.assign0",
+        "key": "ctrl+0",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.assign1",
+        "key": "ctrl+1",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.assign2",
+        "key": "ctrl+2",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.assign3",
+        "key": "ctrl+3",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.assign4",
+        "key": "ctrl+4",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.assign5",
+        "key": "ctrl+5",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.assign6",
+        "key": "ctrl+6",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.assign7",
+        "key": "ctrl+7",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.assign8",
+        "key": "ctrl+8",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.assign9",
+        "key": "ctrl+9",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.jump0",
+        "key": "shift+0",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.jump1",
+        "key": "shift+1",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.jump2",
+        "key": "shift+2",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.jump3",
+        "key": "shift+3",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.jump4",
+        "key": "shift+4",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.jump5",
+        "key": "shift+5",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.jump6",
+        "key": "shift+6",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.jump7",
+        "key": "shift+7",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.jump8",
+        "key": "shift+8",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "hotkey.jump9",
+        "key": "shift+9",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0"
+  }
+}
