@@ -155,52 +155,52 @@
       {
         "command": "hotkey.jump0",
         "key": "shift+0",
-        "when": "editorTextFocus && vim.mode != 'Insert'"
+        "when": "editorTextFocus && vim.mode == 'Normal'"
       },
       {
         "command": "hotkey.jump1",
         "key": "shift+1",
-        "when": "editorTextFocus && vim.mode != 'Insert'"
+        "when": "editorTextFocus && vim.mode == 'Normal'"
       },
       {
         "command": "hotkey.jump2",
         "key": "shift+2",
-        "when": "editorTextFocus && vim.mode != 'Insert'"
+        "when": "editorTextFocus && vim.mode == 'Normal'"
       },
       {
         "command": "hotkey.jump3",
         "key": "shift+3",
-        "when": "editorTextFocus && vim.mode != 'Insert'"
+        "when": "editorTextFocus && vim.mode == 'Normal'"
       },
       {
         "command": "hotkey.jump4",
         "key": "shift+4",
-        "when": "editorTextFocus && vim.mode != 'Insert'"
+        "when": "editorTextFocus && vim.mode == 'Normal'"
       },
       {
         "command": "hotkey.jump5",
         "key": "shift+5",
-        "when": "editorTextFocus && vim.mode != 'Insert'"
+        "when": "editorTextFocus && vim.mode == 'Normal'"
       },
       {
         "command": "hotkey.jump6",
         "key": "shift+6",
-        "when": "editorTextFocus && vim.mode != 'Insert'"
+        "when": "editorTextFocus && vim.mode == 'Normal'"
       },
       {
         "command": "hotkey.jump7",
         "key": "shift+7",
-        "when": "editorTextFocus && vim.mode != 'Insert'"
+        "when": "editorTextFocus && vim.mode == 'Normal'"
       },
       {
         "command": "hotkey.jump8",
         "key": "shift+8",
-        "when": "editorTextFocus && vim.mode != 'Insert'"
+        "when": "editorTextFocus && vim.mode == 'Normal'"
       },
       {
         "command": "hotkey.jump9",
         "key": "shift+9",
-        "when": "editorTextFocus && vim.mode != 'Insert'"
+        "when": "editorTextFocus && vim.mode == 'Normal'"
       }
     ]
   },
