@@ -1,6 +1,9 @@
 {
     "editor.formatOnSave": true,
     "workbench.editor.showTabs": "single",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "window.menuBarVisibility": "hidden",
     "editor.suggest.insertMode": "replace",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "editor.linkedEditing": true,
