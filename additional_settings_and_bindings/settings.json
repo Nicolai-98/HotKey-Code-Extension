@@ -4,10 +4,6 @@
     "editor.suggest.insertMode": "replace",
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "editor.linkedEditing": true,
-    "window.titleBarStyle": "custom",
-    "window.menuBarVisibility": "hidden",
-    "workbench.layoutControl.enabled": false,
-    "window.commandCenter": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "window.zoomLevel": 0.5,
     "launch": {},
@@ -27,5 +23,42 @@
         "misit180.informatik.uni-augsburg.de": "linux"
     },
     "github.copilot.editor.enableAutoCompletions": true,
-    "workbench.colorTheme": "Material Theme Palenight High Contrast"
+    "workbench.colorTheme": "Material Theme Palenight High Contrast",
+    // vim specific settings:
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        }
+    ]
 }
