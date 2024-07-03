@@ -13,7 +13,9 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "workspaceContains:**"
+  ],
   "main": "./out/extension.js",
   "extensionDependencies": [
     "vscodevim.vim"
