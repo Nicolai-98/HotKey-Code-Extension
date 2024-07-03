@@ -10,9 +10,7 @@ interface HotkeyMap {
 export function activate(context: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "hotkey" is now active!');
 
-	// Restore hotkey mappings from global state
 	const savedHotkeyMap = context.globalState.get<HotkeyMap>('hotkeyMap', {});
-	// vscode.window.showInformationMessage('Restored hotkey mappings');
 	for (const key in savedHotkeyMap) {
 		const number = parseInt(key);
 		const filePath = savedHotkeyMap[number];
@@ -46,20 +44,9 @@ function assignHotkey(context: vscode.ExtensionContext, number: number) {
 	if (editor) {
 		const filePath = editor.document.uri.toString();
 		const fileName = getFileNameFromUri(filePath);
-		if (hotkeyMap.has(number)) {
-			const previousFileName = getFileNameFromUri(hotkeyMap.get(number) || '');
-			// vscode.window.showInformationMessage(`Reassigned hotkey ${number} from ${previousFileName} to ${fileName}`);
-		} else {
-			// vscode.window.showInformationMessage(`Assigned hotkey ${number} to ${fileName}`);
-		}
 		hotkeyMap.set(number, filePath);
 		updateHotkeyBarItem(number, fileName);
-
-		// Save the updated hotkeyMap to globalState
 		saveHotkeyMap(context);
-	} else {
-		// This code should be unreachable because the command is disabled when there is no active editor.
-		vscode.window.showErrorMessage('No active editor to assign a hotkey.');
 	}
 }
 
