@@ -17,9 +17,7 @@
     "workspaceContains:**"
   ],
   "main": "./out/extension.js",
-  "extensionDependencies": [
-    // "vscodevim.vim" figure out how to do this and also allow remote ssh compatibility
-  ],
+  "extensionDependencies": [],
   "contributes": {
     "commands": [
       {
